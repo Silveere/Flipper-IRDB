@@ -30,3 +30,24 @@ type: parsed
 protocol: NECext
 address: 81 66 00 00
 command: 9F 60 00 00
+
+name: Energy Save
+type: parsed
+protocol: NECext
+address: 81 66 00 00
+command: 82 7D 00 00
+
+name: Fan Speed
+type: parsed
+protocol: NECext
+address: 81 66 00 00
+command: 99 66 00 00
+
+# this does something weird, it increments a counter from 0-7 on the LCD and
+# doesn't correlate to any button on the unit
+name: UNKNOWN 19
+type: parsed
+protocol: NECext
+address: 81 66 00 00
+command: 93 6C 00 00
+
